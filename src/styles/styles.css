@@ -1,0 +1,152 @@
+:root {
+  --primary: #f84227;
+  --secundary: #ffb143;
+  --blanco: #ffffff;
+  --principalFont: 'Poppins', sans-serif;
+  --secundaryFont: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: var(--fuentePrincipal);
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  margin: 2rem 0;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4.6rem;
+}
+h3 {
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: #c4c4c4;
+}
+
+/* TODO: Atributtes Selector */
+
+[class$='__container'] {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.header {
+  background-color: var(--primary);
+  /* background-image: url(../../public/assets/img/rectangle.svg); */
+  background-repeat: no-repeat;
+  position: relative;
+  /* margin: 10rem 0; */
+  /* Para que no aparezca el sroll h */
+  overflow: hidden;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background-size: 90rem;
+  }
+}
+
+.header::before,
+.header::after {
+  content: '';
+  height: 20rem;
+  width: 100%;
+  position: absolute;
+}
+
+.header::before {
+  /* background-color: blue; */
+  background-image: url(../../public/assets/img/SVGTopCenter.svg);
+  background-repeat: no-repeat;
+  text-align: center;
+  left: 36%;
+}
+
+.header::after {
+  top: 0;
+  /* background-color: blue; */
+  background-image: url(../../public/assets/img/SVGTopRight.svg);
+  background-size: 14rem;
+  background-repeat: no-repeat;
+  left: 93%;
+}
+
+/* .header__bar {
+  background-color: var(--primary);
+} */
+
+@media screen and (min-width: 768px) {
+  .header__bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.header__logo {
+  margin: 0 auto 3rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin: 0;
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    flex-direction: row;
+    justify-content: flex-end;
+    /* align-items: flex-end; */
+  }
+}
+
+.navigation__link {
+  color: white;
+  font-family: var(--secundaryFont);
+  font-size: 2rem;
+  /* Para que no lo tape el header::before */
+  position: relative;
+}
+
+.prueba {
+  position: absolute;
+  top: -110;
+  background-color: blue;
+}

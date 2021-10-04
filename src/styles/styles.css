@@ -55,15 +55,36 @@ body {
   width: 90%;
 }
 
+.header__container {
+  /* background-color: #ffb143; */
+  overflow: hidden;
+}
+
+.header__container::before,
+.header__container::after {
+  content: '';
+  height: 20rem;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.header__container::before {
+  /* background-color: blue; */
+  background-image: url(../../public/assets/img/rectangle.svg);
+  background-repeat: no-repeat;
+  background-size: 100rem;
+  left: 50%;
+  top: 20rem;
+  height: 100%;
+}
+
 .header {
   background-color: var(--primary);
-  /* background-image: url(../../public/assets/img/rectangle.svg); */
-  background-repeat: no-repeat;
   position: relative;
   /* margin: 10rem 0; */
   /* Para que no aparezca el sroll h */
   overflow: hidden;
-  height: 100vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -97,10 +118,6 @@ body {
   left: 93%;
 }
 
-/* .header__bar {
-  background-color: var(--primary);
-} */
-
 @media screen and (min-width: 768px) {
   .header__bar {
     display: flex;
@@ -126,13 +143,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 0;
 }
 
 @media screen and (min-width: 768px) {
   .navigation {
     flex-direction: row;
     justify-content: flex-end;
+    gap: 2rem;
     /* align-items: flex-end; */
   }
 }
@@ -145,8 +163,51 @@ body {
   position: relative;
 }
 
-.prueba {
-  position: absolute;
-  top: -110;
-  background-color: blue;
+/* Header Grid */
+.header__grid {
+  color: var(--blanco);
+
+  align-items: center;
 }
+
+.header__info {
+  display: none;
+}
+
+.header__text {
+  width: 70%;
+}
+
+.header__heading {
+  font-family: var(--principalFont);
+  font-size: 5rem;
+  line-height: 6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 6rem;
+  }
+
+  .header__info {
+    display: flex;
+    font-family: var(--secundaryFont);
+  }
+}
+
+/* .header__grafic {
+  background-image: url(../../public/assets/img/rectangle.svg);
+  background-repeat: no-repeat;
+  position: relative;
+} */
+
+/* background-color: var(--blanco); */
+/* .header__grafic::before,
+.header__grafic::after {
+  background-color: green;
+  content: '';
+  width: 100%;
+  position: absolute;
+} */

@@ -67,7 +67,11 @@ const Menu = () => {
               <div className="main__card">
                 <div className="main__text-card">
                   <h1 className="main__heading">FIND A KFC STORE NEAR YOU</h1>
+                  <p className="main__sub-heading">
+                    SAVE ROOM. WE MADE COOKIES
+                  </p>
                 </div>
+
                 <div className="main__img-card main__elipse-3">
                   <Image src={location} alt="location" className="img-card" />
                 </div>
@@ -79,11 +83,15 @@ const Menu = () => {
                 <h1 className="main__heading">
                   CRISPY AND FRESH CHICKEN MASTER CHEF
                 </h1>
-                <a href="#" className="main__button" />
+
+                <a href="#" className="main__button">
+                  ALL CAMPAIGNS
+                </a>
               </div>
 
               <div className="main__card">
                 <h1 className="main__heading">DO YOU WANT TO BE A HOPE?</h1>
+
                 <a href="#" className="main__button" />
               </div>
             </div>

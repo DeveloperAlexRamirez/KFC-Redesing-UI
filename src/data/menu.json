@@ -1,0 +1,34 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "url": "assets/img/menu-1.png",
+            "name": "ROLLER BOX"
+        },
+        {
+            "id": 2,
+            "url": "assets/img/menu-2.png",
+            "name": "BUCKETS"
+        },
+        {
+            "id": 3,
+            "url": "assets/img/menu-3.png",
+            "name": "WOW BOX"
+        },
+        {
+            "id": 4,
+            "url": "assets/img/menu-4.png",
+            "name": "DRINKS"
+        },
+        {
+            "id": 5,
+            "url": "assets/img/menu-5.png",
+            "name": "MEALS"
+        },
+        {
+            "id": 6,
+            "url": "assets/img/menu-6.png",
+            "name": "MEGA BOX"
+        }
+    ]
+}

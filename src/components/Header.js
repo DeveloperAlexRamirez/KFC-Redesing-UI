@@ -2,7 +2,6 @@ import Image from 'next/image';
 import kfcLogo from '../../public/assets/img/KFC-logo.png';
 import rombo from '../../public/assets/img/rectangle.svg';
 import kfcPrincipal from '../../public/assets/img/kfc-principal.png';
-import Menu from './Menu';
 
 const Header = () => {
   return (
@@ -42,10 +41,12 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <main className="main">
-          <Menu />
-        </main>
       </header>
+      <div className="menu__contenedorButton">
+        <a href="#" className="menu__button">
+          MENUS
+        </a>
+      </div>
     </>
   );
 };

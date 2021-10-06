@@ -12,11 +12,6 @@ const Menu = () => {
       <div className="menu">
         <div className="menu__container">
           <div className="menu__heading">
-            <div className="menu__contenedorButton">
-              <a href="#" className="menu__button">
-                MENUS
-              </a>
-            </div>
             <div className="menu__carousel">
               {products.map((item) => (
                 <div className="menu__imgContainer" key={item.id}>
@@ -30,6 +25,7 @@ const Menu = () => {
           </div>
         </div>
 
+        {/* TODO: MAIN */}
         <div className="main">
           <div className="main__container">
             <div className="main__grid-1">
@@ -78,25 +74,31 @@ const Menu = () => {
               </div>
             </div>
 
+            {/* TODO: GRID 2 */}
             <div className="main__grid-2">
-              <div className="main__card">
-                <h1 className="main__heading">
-                  CRISPY AND FRESH CHICKEN MASTER CHEF
-                </h1>
+              <div className="main__card-grid-2">
+                <div className="main__text-card">
+                  <h1 className="main__heading">
+                    CRISPY AND FRESH CHICKEN MASTER CHEF
+                  </h1>
 
-                <a href="#" className="main__button">
-                  ALL CAMPAIGNS
-                </a>
+                  <a href="#" className="main__button">
+                    ALL CAMPAIGNS
+                  </a>
+                </div>
+
+                <div className="main__img-card main__elipse-3 elipse-grid-2">
+                  <Image src={location} alt="location" className="img-card" />
+                </div>
               </div>
 
-              <div className="main__card">
-                <h1 className="main__heading">DO YOU WANT TO BE A HOPE?</h1>
-
+              <div className="main__card-grid-2">
+                <div className="main__text-card">
+                  <h1 className="main__heading">DO YOU WANT TO BE A HOPE?</h1>
+                </div>
                 <a href="#" className="main__button" />
               </div>
             </div>
-
-            <div className="main__cards section-1"></div>
           </div>
         </div>
       </div>

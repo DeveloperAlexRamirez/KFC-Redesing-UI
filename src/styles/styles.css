@@ -375,6 +375,29 @@ body {
   height: 22rem;
   /* horizontal, vertical, blur, spread (dureza), color */
   box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 0.15);
+  transition-property: transform;
+  transition-duration: 300ms;
+}
+
+/* Texto */
+.main__size {
+  font-family: var(--principalFont);
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.main__card:hover {
+  color: var(--blanco);
+  background-color: var(--primary);
+  box-shadow: 0px 0px 15px 1px rgb(red / 0.15);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.main__card:hover .main__size {
+  color: white;
 }
 
 @media screen and (min-width: 992px) {
@@ -383,6 +406,10 @@ body {
     height: 20rem;
   }
 }
+/* .main__size.active {
+  color: white;
+  transition: 300ms;
+} */
 
 .main__elipse-1 {
   background-image: url(../../public/assets/img/ellipse.svg);
@@ -486,15 +513,6 @@ body {
   line-height: 2rem;
 }
 
-/* Texto */
-.main__size {
-  font-family: var(--principalFont);
-  font-weight: 600;
-  color: var(--primary);
-  font-size: 2rem;
-  margin: 1rem 0;
-}
-
 .main__img-card {
   height: 100%;
   display: flex;
@@ -538,6 +556,8 @@ body {
   height: auto;
   /* horizontal, vertical, blur, spread (dureza), color */
   box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 0.15);
+  transition-property: color, background-color, transform;
+  transition-duration: 300ms;
 }
 
 @media screen and (min-width: 768px) {
@@ -693,12 +713,33 @@ body {
   position: relative;
 }
 
-.mobile__button {
-  background-color: black;
-  padding: 1rem 3rem;
-}
-
 .mobile__contenedor-button {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  /* background-color: green; */
+  gap: 1rem;
+  width: 100%;
+}
+
+.mobile__button {
+  background-color: black;
+  padding: 0.5rem 3rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__card-grid-2:hover {
+  color: white;
+  background-color: var(--primary);
+  box-shadow: 0px 0px 15px 1px rgb(red / 0.15);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.main__card-grid-2:hover .main__button {
+  background-color: var(--blanco);
+  color: var(--primary);
 }

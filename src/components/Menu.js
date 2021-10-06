@@ -54,7 +54,7 @@ const Menu = () => {
                   <p className="main__sub-heading">
                     SAVE ROOM. WE MADE COOKIES
                   </p>
-                  <p className="main__size">3.90 LT</p>
+                  <p className="main__size active">3.90 LT</p>
                 </div>
                 <div className="main__img-card main__elipse-2">
                   <Image

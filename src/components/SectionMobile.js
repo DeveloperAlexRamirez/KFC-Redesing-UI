@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import screen1 from '../../public/assets/img/screen-1.svg';
+import appstore from '../../public/assets/img/appstore.png';
+import googleplay from '../../public/assets/img/googleplay.png';
 
 const SectionMobile = () => {
   return (
@@ -19,10 +21,12 @@ const SectionMobile = () => {
 
             <div className="mobile__contenedor-button">
               <a href="#" className="mobile__button">
-                ALL CAMPAIGNS
+                {/* ALL CAMPAIGNS */}
+                <Image src={appstore} alt="appstore" />
               </a>
               <a href="#" className="mobile__button">
-                ALL CAMPAIGNS
+                {/* ALL CAMPAIGNS */}
+                <Image src={googleplay} alt="googleplay" />
               </a>
             </div>
           </div>

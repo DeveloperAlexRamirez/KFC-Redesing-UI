@@ -5,6 +5,11 @@ import hamCard from '../../public/assets/img/hamb-card.png';
 import cookies from '../../public/assets/img/cookies.png';
 import location from '../../public/assets/img/location-logo.png';
 
+import chefsito from '../../public/assets/img/chefsito.png';
+
+import addHope from '../../public/assets/img/addHope.png';
+import SectionMobile from './SectionMobile';
+
 const Menu = () => {
   const products = Product.products;
   return (
@@ -77,29 +82,47 @@ const Menu = () => {
             {/* TODO: GRID 2 */}
             <div className="main__grid-2">
               <div className="main__card-grid-2">
-                <div className="main__text-card">
-                  <h1 className="main__heading">
+                <div className="main__text-card-grid-2">
+                  <h1 className="main__heading heading-grid-2">
                     CRISPY AND FRESH CHICKEN MASTER CHEF
                   </h1>
-
                   <a href="#" className="main__button">
                     ALL CAMPAIGNS
                   </a>
                 </div>
 
-                <div className="main__img-card main__elipse-3 elipse-grid-2">
-                  <Image src={location} alt="location" className="img-card" />
+                <div className="main__img-card-grid-2">
+                  <Image
+                    src={chefsito}
+                    alt="chefsito"
+                    className="img-card-grid-2"
+                  />
                 </div>
               </div>
 
+              {/* CARD 2 */}
               <div className="main__card-grid-2">
-                <div className="main__text-card">
-                  <h1 className="main__heading">DO YOU WANT TO BE A HOPE?</h1>
+                <div className="main__text-card-grid-2">
+                  <h1 className="main__heading heading-grid-2">
+                    DO YOU WANT TO BE A HOPE?
+                  </h1>
+                  <a href="#" className="main__button">
+                    SEE MORE
+                  </a>
                 </div>
-                <a href="#" className="main__button" />
+
+                <div className="main__img-card-grid-2">
+                  <Image
+                    src={addHope}
+                    alt="addHope"
+                    className="img-card-grid-2"
+                  />
+                </div>
               </div>
             </div>
           </div>
+
+          <SectionMobile />
         </div>
       </div>
     </>

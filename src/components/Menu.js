@@ -9,6 +9,7 @@ import chefsito from '../../public/assets/img/chefsito.png';
 
 import addHope from '../../public/assets/img/addHope.png';
 import SectionMobile from './SectionMobile';
+import Footer from './Footer';
 
 const Menu = () => {
   const products = Product.products;

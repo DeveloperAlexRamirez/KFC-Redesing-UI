@@ -265,7 +265,7 @@ body {
 .main {
   position: relative;
   background-color: var(--terciary);
-  padding-bottom: 10rem;
+  padding-bottom: 2rem;
 }
 
 .menu {
@@ -631,14 +631,37 @@ body {
 .mobile {
   background-color: var(--secundary);
   margin-top: 10rem;
-  margin-bottom: 27rem;
+  margin-bottom: 5rem;
   padding: 2rem 0;
+  position: relative;
 }
+
+/* TODO: COLOCAR LOS SVG EN LA SECCION AMARILLA */
+
+.mobile::before,
+.mobile::after {
+  background-color: #f84227;
+  content: '';
+  /* height: 20rem; */
+  width: 100%;
+  position: absolute;
+}
+
+/* .mobile::before {
+
+} */
 
 .mobile__grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
+
+/* .mobile__grafic {
+  background-color: orange;
+} */
+
+/* .mobile__grid:hover {
+} */
 
 @media screen and (min-width: 768px) {
   .mobile__grid {
@@ -715,11 +738,18 @@ body {
 
 .mobile__contenedor-button {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   /* background-color: green; */
   gap: 1rem;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile__contenedor-button {
+    /* display: flex; */
+    flex-direction: row;
+  }
 }
 
 .mobile__button {
@@ -742,4 +772,84 @@ body {
 .main__card-grid-2:hover .main__button {
   background-color: var(--blanco);
   color: var(--primary);
+}
+
+/* TODO: Footer */
+
+.footer__red {
+  background-color: var(--primary);
+  padding: 1rem 0;
+  /* height: 4rem; */
+  overflow: hidden;
+}
+
+.footer__black {
+  background-color: #202329;
+  padding: 2rem;
+  width: 100%;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.footer__logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer__prueba {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-whats,
+.logo-market {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+img {
+  display: inline-block;
+}
+
+.container__logos-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+}
+
+.footer__text {
+  font-family: var(--principalFont);
+  color: var(--blanco);
+}
+
+.container-icons {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 2rem;
+}
+
+.kfc-logo {
+  width: 20%;
 }

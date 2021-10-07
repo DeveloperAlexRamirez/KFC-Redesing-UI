@@ -44,6 +44,11 @@ img {
   display: block;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 body {
   background-color: var(--blanco);
 }
@@ -790,17 +795,32 @@ body {
 }
 
 .footer__grid {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 4rem;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 4rem;
+    align-items: center;
+  }
 }
 
 .footer__logos {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__logos {
+    justify-content: flex-end;
+    margin-top: 0;
+  }
 }
 
 .footer__prueba {
@@ -823,8 +843,16 @@ img {
 .container__logos-contact {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-between;
-  height: 5rem;
+  /* height: 5rem; */
+}
+
+@media screen and (min-width: 768px) {
+  .container__logos-contact {
+    flex-direction: row;
+  }
 }
 
 .footer__text {
@@ -852,4 +880,31 @@ img {
 
 .kfc-logo {
   width: 20%;
+}
+
+/* FOOTER BLACK */
+.footer__black a {
+  font-family: var(--principalFont);
+  color: #c4c4c4;
+}
+
+.cabecera {
+  font-family: var(--principalFont);
+  color: var(--blanco);
+}
+
+.sr-kfc {
+  opacity: 0.1;
+  width: 24rem;
+}
+
+.container__sr-kfc {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container__sr-kfc {
+    justify-content: flex-end;
+  }
 }

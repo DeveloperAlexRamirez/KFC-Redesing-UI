@@ -56,14 +56,49 @@ const Footer = () => {
 
       <div className="footer__black">
         <div className="footer__container">
-          {/* logo kfc */}
-          {/* logo wsp */}
-          {/* logo tienda */}
+          <div className="footer__grid">
+            <div className="container__logos-contact">
+              <ul>
+                <p className="cabecera">ABOUT</p>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+                <li>
+                  <a href="#">Legal</a>
+                </li>
+                <li>
+                  <a href="#">Cracking Tags</a>
+                </li>
+                <li>
+                  <a href="#">Privacy</a>
+                </li>
+              </ul>
 
-          {/* logo facebook */}
-          {/* logo twitter */}
-          {/* logo yt */}
-          {/* logo instagram */}
+              <ul>
+                <p className="cabecera">SITE MAP</p>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Store Locator</a>
+                </li>
+              </ul>
+
+              <ul>
+                <p className="cabecera">NUTRITION</p>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Store Locator</a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="container__sr-kfc">
+              <img src="assets/img/srkfc.png" className="sr-kfc" />
+            </div>
+          </div>
         </div>
       </div>
     </>

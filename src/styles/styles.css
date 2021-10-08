@@ -645,28 +645,26 @@ body {
 
 .mobile::before,
 .mobile::after {
-  background-color: #f84227;
   content: '';
   /* height: 20rem; */
   width: 100%;
-  position: absolute;
+  position: relative;
 }
-
-/* .mobile::before {
-
-} */
 
 .mobile__grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
 
-/* .mobile__grafic {
-  background-color: orange;
-} */
-
-/* .mobile__grid:hover {
-} */
+.mobile::before {
+  background-image: url(../../public/assets/img/yellowTop.svg);
+  background-repeat: no-repeat;
+  /* background-color: green; */
+  top: -7rem;
+  height: 25rem;
+  left: 70%;
+  position: absolute;
+}
 
 @media screen and (min-width: 768px) {
   .mobile__grid {
@@ -717,6 +715,15 @@ body {
   background-repeat: no-repeat;
   top: 0;
 }
+
+/* .mobile__container::after {
+  background-image: url(../../public/assets/img/yellowBottom.svg);
+  background-repeat: no-repeat;
+  bottom: -8.8rem;
+  height: 20rem;
+  left: 15%;
+  position: absolute;
+} */
 
 @media screen and (min-width: 463px) {
   .mobile__container::before {
@@ -849,7 +856,7 @@ img {
   /* height: 5rem; */
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 462px) {
   .container__logos-contact {
     flex-direction: row;
   }
@@ -865,6 +872,13 @@ img {
   flex: 1;
   justify-content: space-evenly;
   flex-direction: row;
+  gap: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container-icons {
+    gap: unset;
+  }
 }
 
 .icon-container {
